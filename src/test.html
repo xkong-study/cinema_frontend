@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<!-- Bootstrap 5 Toast Element -->
+<div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+        <strong class="me-auto">Bootstrap</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+        Hello, world! This is a toast message.
+    </div>
+</div>
+
+<!-- Card Container -->
+<div id="cardContainer" class="container-fluid">
+    <!-- Contents of Card Container (omitted) -->
+    ...
+</div>
+
+<script>
+    // Initialize Bootstrap 5 Toast
+    const toastNode = document.getElementById('toast');
+    const toast = new bootstrap.Toast(toastNode, {
+        animation: true,
+        delay: 5000
+    });
+
+    // Show the Toast Element
+    toast.show();
+
+    // Get Card Container Element
+    const cardContainer = document.getElementById('cardContainer');
+    // Additional JavaScript code (omitted)
+    ...
+</script>
+</body>
+</html>
